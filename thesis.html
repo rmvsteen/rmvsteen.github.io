@@ -4,15 +4,15 @@
 			<title> PhD Thesis | Robert van Steenbergen </title>
 			<style>
         body {
-            background-color: #f0f8ff; /* Light blue background color */
-            font-family: Arial, sans-serif; /* Font set to Arial */
-            color: #333; /* Dark gray text color */
+            background-color: #99c090; /* Light green background color */
+            font-family: 'Helvetica', 'Arial', sans-serif; /* Font set to Helvetica */
+            color: #212026; /* Dark brown text color */
         }
         header h1 {
-            color: #0056b3; /* Dark blue title color */
+            color: #a65d43; /* Dark orange title color */
         }
         a {
-            color: #007bff; /* Blue color for links */
+            color: #4a2e2f; /* Brown color for links */
             text-decoration: none; /* No underline for links */
         }
         a:hover {
@@ -24,21 +24,31 @@
 		<body>
 		
 			<header>
-        <h1>Welcome to My Simple Webpage</h1>
-        <h2>A Basic HTML Example</h2>
+        <h1>Evaluation and Coordination of UAVs in Humanitarian Logistics</h1>
+        <h2>PhD thesis by Robert van Steenbergen</h2>
     </header>
 
     <section>
-        <h3>Introduction</h3>
-        <p>This is a basic HTML page that demonstrates the use of headers, paragraphs, and a simple structure.</p>
+        <h3>Overview</h3>
+        <p>
+Unmanned Aerial Vehicles (UAVs), also known as drones, have the potential to improve humanitarian operations, yet they are currently not deployed to deliver relief goods. This thesis addresses the challenge of effectively operating cargo UAVs in humanitarian logistics from an operations research perspective. We investigate a wide range of historical disasters including a variety of complexities faced in humanitarian efforts, including vehicle diversity, inaccessibility, scarcity of supplies, security threats (e.g., risks of vehicle attacks), and uncertainties in demand and travel times. Aligning with the non-financial objectives of humanitarian organizations, we analyze aspects such as response times, human suffering, demand coverage, and equality alongside cost efficiency. We propose a generic simulation-based modeling framework for UAV-aided humanitarian logistics and develop efficient algorithmic methods, including mathematical models and reinforcement learning approaches, to get the most value out of the mixed vehicle fleets and gain insights into the effective deployment of UAVs. With this knowledge, better decisions can be made regarding the number of UAVs to deploy, where to send them, and how to do this in a way that is both cost-efficient and effective in terms of aiding people in need.
+
+Results demonstrate that humanitarian cargo UAVs generally can reduce costs, improve predictability and flexibility, alleviate human suffering, mitigate risks, and improve response times and location coverage. These results are not achieved by taking over the whole operation, but by mainly tackling the most challenging and hard-to-reach destinations. In this way, UAVs create a less complicated and more reliable operation for the conventional vehicles to serve the remaining majority of beneficiaries.
+		
+		For more details, go to the  
+            <a href="https://doi.org/10.3990/1.9789036562232" target="_blank">online PDF version</a>.
+	
+	</p>
     </section>
 
     <section>
-        <h3>About This Page</h3>
-        <p> For more details, go to the  
-            <a href="https://doi.org/10.3990/1.9789036562232" target="_blank">online PDF version</a>.
+        <h3>About the Author</h3>
+        <p> Robert van Steenbergen (1994) is a data scientist and operations researcher who is passionate about addressing societal challenges with data and mathematics. Upon earning his master’s degree in Industrial Engineering and Management, he pursued his PhD research in humanitarian UAV logistics under the supervision of prof.dr.ir. Martijn Mes.  His PhD defense is on Friday 13 September, starting at 12:30 in Waaier 4 at the University of Twente.
 	</p>
     </section>
+			
+
+
 			
 			<script type="module">
 				import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
@@ -47,38 +57,38 @@
 					apiHost: "https://flowiseai.rmvsteen.synology.me",
 					theme: {
 						button: {
-        backgroundColor: '#3B81F6',
+        backgroundColor: '#a65d43',
         right: 20,
         bottom: 20,
-        size: 48, // small | medium | large | number
+        size: 80, // small | medium | large | number
         dragAndDrop: true,
         iconColor: 'white',
       },
 tooltip: {
         showTooltip: true,
-        tooltipMessage: 'Hi There 👋!',
-        tooltipBackgroundColor: 'black',
+        tooltipMessage: 'Hi, chat here with the thesis 👋!',
+        tooltipBackgroundColor: '#212026',
         tooltipTextColor: 'white',
         tooltipFontSize: 16,
       },
 						chatWindow: {
 							//showTitle: true, // show/hide the title bar
-							title: 'Roberts PhD Thesis Assistant',
+							title: 'Thesis Chat',
 							titleAvatarSrc: 'https://cdn2.iconfinder.com/data/icons/reading/512/phd-master-education-level-professor-512.png',
 							welcomeMessage: "Welcome dear opponent! Please ask a question about Robert's thesis. I can answer in any language.",
 							backgroundColor: "#ffffff",
 							height: 700,
 							width: 400,
 							fontSize: 16,
-							poweredByTextColor: "#303235",
+							poweredByTextColor: "#ffffff",
 							botMessage: {
-								backgroundColor: "#503F2D",
+								backgroundColor: "#4a2e2f",
 								textColor: "#ffffff",
 								showAvatar: false,
 								avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
 							},
 							userMessage: {
-								backgroundColor: "#3B81F6",
+								backgroundColor: "#a65d43",
 								textColor: "#ffffff",
 								showAvatar: false,
 								avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
@@ -87,7 +97,7 @@ tooltip: {
 								placeholder: "Type your question",
 								backgroundColor: "#ffffff",
 								textColor: "#303235",
-								sendButtonColor: "#3B81F6",
+								sendButtonColor: "#a65d43",
 							}
 						}
 					}
